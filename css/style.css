@@ -1,0 +1,413 @@
+/*font-family: 'Noto Sans', sans-serif;
+
+h1 { font-family: ‘Metrophobic’, Arial, serif; font-weight: 400; }
+h1 { font-family: ‘Metrophobic’, Arial, serif; font-weight: 700; }
+
+*/
+
+body,
+html{
+   width: 100%;
+   height: 100%;
+   padding: 0;
+   margin: 0;
+}
+
+img {
+   border:0;
+}
+
+sup {
+   top: -2px;
+   font-size: 100%;
+}
+
+
+a:hover {
+   color: #c77160;
+   text-decoration: none;
+}
+
+input[type="text"],
+input[type="password"] {
+   width: 221px;
+   box-shadow: 2px 5px 4px #444;
+}
+
+.red {
+   color: #821a06;
+}
+
+/* * * * * * * * 
+/* INDEX PAGE *
+*************/
+#container {
+   background: url('../img/gradient.png') no-repeat;
+   background-size: 100% 100%;
+   width: 100%;
+   height: 100%;
+}
+
+.login {
+   position: absolute;
+   bottom: 23px;
+   left: 43.5%;
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 20px;
+   font-weight: 400;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+
+.panel {
+   background-color: rgba(0, 0, 0, .5);
+}
+
+.fb_button {
+   cursor: pointer;
+}
+
+.signin {
+   display: none;
+   position: absolute;
+   left: 37%;
+   top: 60%;
+   width: 250px;
+   height: 116px;
+   padding: 30px;
+   box-shadow: 2px 5px 4px #666;
+   text-align: center;
+}
+
+.signup {
+   display: none;
+   position: absolute;
+   left: 28%;
+   top: 60%;
+   width: 475px;
+   height: 110px;
+   padding: 30px;
+   box-shadow: 2px 5px 4px #666;
+   text-align: center;
+}
+
+.left {
+   float: left;
+}
+
+.right {
+   float: right;
+}
+
+.logo {
+   position: absolute;
+   top: 10%;
+   left: 38%;
+}
+
+/* * * * * * * * 
+/* PAGE *
+*************/
+
+#game-container {
+   background: url('../img/background.png') no-repeat;
+   width: 100%;
+   min-height: 100%;
+   background-attachment: fixed;
+   background-position: bottom;
+  
+}
+
+.navigation {
+   background: url('../img/nav_bar.png') no-repeat;
+   height: 98px;
+   text-align: center;
+
+}
+
+.navigation ul {
+   position: absolute;
+   list-style: none;
+}
+
+/* when there is spacing between class names / elements, that implies elements are nested */
+.navigation ul li {
+   display: inline-block;
+   cursor: pointer;
+}
+
+.logo-small {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   cursor: pointer;
+   z-index: 999;
+}
+
+.nav {
+   top: 10px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+/* when there is no spacing (between ul + .nav) that implies everyone is on the same level */
+ul.nav li {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 20px;
+   font-weight: 400;
+   text-align: center;
+   text-transform: uppercase;
+
+   /* setting the padding for top, right, left and bottom margins */
+   /* padding: 25px 25px 25px 25px; */
+   padding: 25px;
+}
+
+ul.nav li:hover {
+   color: #888;
+}
+
+ul.nav li a {
+   color: #000;
+}
+
+ul.nav li a:hover {
+   color: #888;
+   background: none;
+}
+
+.social {
+   top: 20px;
+   right: 40px;
+}
+
+.stage {
+   margin: 60px auto;
+   width: 1055px;
+}
+
+.stage p {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   text-align: center;
+}
+
+.stage-left {
+   display:inline-block;
+   background: url('../img/stage_left.png') no-repeat;
+   width: 656px;
+   height: 477px;
+   vertical-align: top;
+   text-align: center;
+   cursor: pointer;
+}
+
+.stage-right {
+   display:inline-block;
+   background: url('../img/stage_right.png') no-repeat;
+   width: 535px;
+   height: 485px;
+   margin-left: -140px;
+   vertical-align: top;
+   text-align: center;
+   cursor: pointer;
+}
+
+.instructions {
+   margin-top: 150px;
+}
+
+.instructions p {
+   margin-top: 10px;
+}
+
+.stage-left .instructions {
+   margin-left: -121px;
+}
+
+.stage-right .instructions {
+   margin-left: 70px;
+}
+
+/* * * * * * * * 
+/* RESUME *
+*************/
+
+
+
+.content {
+   margin: 10px auto;
+   
+}
+
+.content p {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   text-align: center;
+}
+
+.map {
+   display:inline-block;
+   background: url('../img/map.png') no-repeat;
+   width: 1236px;
+   height: 563px;
+   margin-top:10px;
+   vertical-align: top;
+   text-align: center;
+   cursor: pointer;
+   
+}
+.pointer{
+   display:inline-block;
+   margin-top: 50px;
+   margin-left:-550px;
+   cursor:pointer;
+}
+
+.banner{
+   display: inline-block;
+   background: url('../img/red_banner.png') no-repeat;
+   height: 81px;
+   width: 987px;
+   margin-left: 120px;
+   text-align: center;
+}
+
+.banner .word{
+   margin-top: 20px;
+}
+
+/* * * * * * * * 
+/* GAME PAGE *
+*************/
+
+.boxes{
+   margin:30px;
+   margin-top:60px;
+}
+
+.box-left {
+   display:inline-block;
+   background: url('../img/left_box.png') no-repeat;
+   width: 586px;
+   height: 593px;
+   vertical-align: top;
+   text-align: center;
+}
+
+.picture{
+   margin-top:-513px;
+   cursor:pointer;
+}
+
+.picture2{
+   margin-top:-513px;
+   cursor:pointer;
+}
+
+.picture img:hover{
+   opacity:0.4;
+}
+
+.box-right {
+   display:inline-block;
+   background: url('../img/right_box.png') no-repeat;
+   width: 586px;
+   height: 593px;
+   vertical-align: top;
+   text-align: center;   
+}
+
+.date {
+   margin-top: 30px;
+}
+
+.date p {
+   color:000;
+   margin-top: 500px;
+   margin-left:-400px;
+}
+
+.date p:hover {
+   color: #821a06;
+}
+
+.riddle{
+   margin-top:60px;
+   margin-left:25%;
+   text-align:center;
+   width:600px;
+}
+.riddle p{
+   font-family: 'Bad Script', cursive;
+   line-height:45px;
+   font-size:30px;
+}
+
+.riddle .red{
+    font-family: 'Bad Script', cursive;
+   line-height:45px;
+   font-size:30px;
+   color:red;
+}
+
+.upload {
+   display: none;
+   position: absolute;
+   left: 37%;
+   bottom:-400px;
+   width: 250px;
+   height: 116px;
+   padding: 30px;
+   box-shadow: 2px 5px 4px #666;
+   text-align: center;
+}
+
+.submission{
+   background: url('../img/upload_box.png') no-repeat;
+   height:59px;
+   width:389px;
+   cursor:pointer;
+   padding-top:12px;
+   margin-top:10px;
+   margin-left:33%;
+   text-align:center;
+}
+
+#uploadPic{
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 22px;
+   font-weight: 400;
+   text-transform: uppercase;
+   font-style: bold;
+}
+
+.bigPic {
+   display: none;
+   background-color: rgba(0, 0, 0, .8);
+   position: absolute;
+   left: 25%;
+   bottom:-400px;
+   width: 600px;
+   height: 650px;
+   padding: 30px;
+   box-shadow: 2px 5px 4px #666;
+   text-align: center;
+}
+
+.bigPic2 {
+   display: none;
+   background-color: rgba(0, 0, 0, .8);
+   position: absolute;
+   left: 25%;
+   bottom:-400px;
+   width: 600px;
+   height: 650px;
+   padding: 30px;
+   box-shadow: 2px 5px 4px #666;
+   text-align: center;
+}
+
